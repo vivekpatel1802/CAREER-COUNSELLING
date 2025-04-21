@@ -1,0 +1,112 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Oswald:wght@200..700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.products {
+	font-family: 'Edu VIC WA NT Beginner', sans-serif;
+	margin: 0;
+	padding: 0;
+	max-width: 968px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.heading h1 {
+	text-decoration: underline;
+	box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 50%);
+	border: 4px double #02198b;
+	border-radius: 50px;
+	font-size: 50px;
+	margin-top: 3rem;
+	text-align: center;
+}
+
+.heading h2 {
+	text-align: center;
+	margin-top: 4rem;
+	border: 3px solid black;
+	border-radius: 50px;
+	font-size: 2rem;
+}
+
+.products-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+	grid-gap: 5rem;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.products-container .box {
+	padding: 20px;
+	box-shadow: 1px 2px 11px 4px rgb(14 55 54 / 15%);
+	border-radius: 0.5rem;
+	position: relative;
+}
+
+.products-container .box img {
+	width: 100%;
+	height: 200px;
+	object-fit: contain;
+	object-position: center;
+}
+
+.products-container .box span {
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.products-container .box h2 {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.products-container .box .price {
+	font-size: 1rem;
+	font-weight: 600;
+	margin-top: 0.5rem;
+	color: #02198b;
+}
+
+.products-container .box .price span {
+	color: black;
+	font-size: 1.5rem;
+}
+
+.products-container .box .bx-cart-alt {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	padding: 10px;
+	background: green;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 0.5rem 0 0.5rem 0;
+}
+
+.products-container .box .bx-cart-alt:hover {
+	background: #02198b;
+	transition: 0.2s all linear;
+}
+
+.products-container .box .bx-heart {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 20px;
+	color: brown;
+}
+
+.products-container .box .bx-heart:hover {
+	color: red;
+	transition: 0.2s all linear;
+}
+
+.products-container .box .discount {
+	position: absolute;
+	top: 1rem;
+	left: 0;
+	background: brown;
+	color: #fff;
+	padding: 4px 18px;
+	clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 50%, 0% 0%);
+}
